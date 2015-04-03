@@ -6,9 +6,8 @@
     //border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
-    background-image: url(/assets/footer_lodyas.png);
-    background-repeat: repeat-x;
-    background-size: 200px;
+    background: url(/assets/nycdawn.png) center center;
+    background-size:cover;
 
     box-shadow: 0px 5px 10px #222;
 
@@ -179,6 +178,9 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background: #222;
+
+    background-size: 200px;
 }
 
 .page-heading {
@@ -186,10 +188,21 @@
 }
 
 .post-list {
+    background: #d5d5d5;
+
+    padding: $spacing-unit / 2;
+    border-radius: $spacing-unit / 4;
+
     margin-left: 0;
     list-style: none;
 
     > li {
+
+        padding: $spacing-unit / 2;
+        box-shadow:0 5px 5px #aaa;
+        background:white;
+        border-radius:3px;
+
         margin-bottom: $spacing-unit;
     }
 }
