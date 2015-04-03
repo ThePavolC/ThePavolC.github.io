@@ -1,16 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: CV
+permalink: /cv/
 ---
-
-<!--
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
--->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget pretium eros, eu sollicitudin sem. Mauris vel laoreet odio. Nunc lobortis consequat urna, quis euismod orci iaculis vel. Praesent elementum, magna eu fermentum finibus, erat sem sagittis libero, sed pharetra lorem urna id turpis. In posuere sodales augue, nec malesuada velit feugiat id. Etiam in pretium ante. Etiam porttitor leo sit amet auctor eleifend.
 

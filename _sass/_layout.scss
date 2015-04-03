@@ -2,9 +2,15 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    //border-top: 5px solid $grey-color-dark;
+    //border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+
+    background-image: url(/assets/footer_lodyas.png);
+    background-repeat: repeat-x;
+    background-size: 200px;
+
+    box-shadow: 0px 5px 10px #222;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -32,7 +38,8 @@
     }
 
     .page-link {
-        color: $text-color;
+        //color: $text-color;
+        color: lightGray;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -101,10 +108,19 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
+.contact-list {
+    list-style: none;
+    margin-left: 0;
+}
+
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    > li {
+        float: left;
+        margin-right: $spacing-unit / 2;
+    }
 }
 
 .footer-col-wrapper {
@@ -126,8 +142,8 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
