@@ -1,7 +1,7 @@
 ---
 layout: post
-title: First blog
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra rhoncus lobortis. Mauris et consectetur risus, ut commodo urna. 
+title: Sample blog
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra rhoncus lobortis. Mauris et consectetur risus, ut commodo urna.
 tags: some tags, and more tags
 ---
 
