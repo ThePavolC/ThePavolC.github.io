@@ -2,6 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
+published: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget pretium eros, eu sollicitudin sem. Mauris vel laoreet odio. Nunc lobortis consequat urna, quis euismod orci iaculis vel. Praesent elementum, magna eu fermentum finibus, erat sem sagittis libero, sed pharetra lorem urna id turpis. In posuere sodales augue, nec malesuada velit feugiat id. Etiam in pretium ante. Etiam porttitor leo sit amet auctor eleifend.
