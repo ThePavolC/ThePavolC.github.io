@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitHub Pages and Jekyll"
+title:  GitHub Pages and Jekyll
 categories: jekyll github-pages how-to
 description: Quick guide on how to make GitHub page and start using Jekyll.
 published: True
