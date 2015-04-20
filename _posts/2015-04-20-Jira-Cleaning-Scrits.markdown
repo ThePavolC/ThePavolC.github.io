@@ -3,7 +3,7 @@ layout: post
 title:  Jira Cleaning
 categories: jira
 description: Couple of Python scripts I used to remove projects, user groups and permission schemes in Jira.
-published: False
+published: True
 ---
 
 There is couple of things that can slow down Jira. The obvious issues would be [database access][jira-db], [disk access][jira-hd] or just not enough computing power. In my opinion, inappropriate use can be very harmful as well, and with older versions of Jira you could get significant performance boost just by "cleaning" old stuff.
@@ -63,7 +63,7 @@ To run Python code:
 $ python remove_projects.py [-test|-live] <file-with-projects.txt>
 {% endhighlight %}
 
-You can find all source code in [CleanJira/remove projects][clean-jira-projects] repository.
+You can find all source code in [CleanJira][clean-jira] repository.
 
 # Removing Jira User Groups
 
@@ -98,7 +98,7 @@ To run Python code:
 $ python remove_usergroups.py [-test|-live] <file-with-usergroups.txt>
 {% endhighlight %}
 
-You can find all source code in [CleanJira/remove usergroups][clean-jira-usergroups] repository.
+You can find all source code in [CleanJira][clean-jira] repository.
 
 # Remove permission schemes without projects
 
@@ -145,11 +145,9 @@ To run Python code:
 $ python remove_permission_schemes.py [-test|-live] <file-with-permission-schemes.txt>
 {% endhighlight %}
 
-You can find all source code in [CleanJira/remove permission schemes][clean-jira-schemes] repository.
+You can find all source code in [CleanJira][clean-jira] repository.
 
 [jira-python]: http://pythonhosted.org//jira/
-[clean-jira-projects]: https://github.com/ThePavolC/CleanJira/tree/master/remove%20projects
-[clean-jira-usergroups]: https://github.com/ThePavolC/CleanJira/tree/master/remove%20usergroups
-[clean-jira-schemes]: https://github.com/ThePavolC/CleanJira/tree/master/remove%20permission%20schemes
+[clean-jira]: https://github.com/ThePavolC/CleanJira
 [jira-db]: https://confluence.atlassian.com/display/JIRAKB/Testing+Database+Access+Speed
 [jira-hd]: https://confluence.atlassian.com/display/JIRAKB/Testing+Disk+Access+Speed
