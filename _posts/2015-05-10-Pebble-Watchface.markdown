@@ -7,6 +7,7 @@ published: False
 ---
 
 Intro
+
 1. how to install api and run basic check
 2. define what we want to see
 3. adding time labels
@@ -17,9 +18,9 @@ Outro
 
 # Install SDK and check connectivity
 
-Installing Pebble SDK was very simple for me and without any issues. [On download page][download-sdk] you can decide between new 3.0 SDK which is still in Beta version or 2.9 SDK, which is the one I picked. Pebble strongly recommends to rebuild and retest apps to all developers, but I doubt that mine simple watchface would need it at this point.
+Installing Pebble SDK is very simple and it worked without any issues. [On download page][download-sdk] you can decide between new 3.0 SDK which is still in Beta version or 2.9 SDK, which is the one I picked. Pebble strongly recommends to rebuild and retest apps to all developers, but I doubt that mine simple watchface would need it at this point.
 
-[Installation of SDK for Linux][install] is pretty much copy/past action. After that I wanted to check if everything works properly. First of all, you need to [enable developer connection][dev-connection], so you can try out your app on the watch. There is also [emulator][emulator], but I want real thing. In developer view on the phone app, there is server IP address, you will need it later.
+[Installation of SDK for Linux][install] is pretty much copy/past action. After that I wanted to check if everything works properly. First of all, you need to [enable developer connection][dev-connection], so you can try out your app on the watch. There is also [emulator][emulator] available. In developer view on the phone app, there is server IP address, you will need it later.
 
 To test connection, you can create "Hello World" app and push it to your watch. Just go to your project folder and create new Pebble project. Then you can export your server IP address to env variables so you don't have to type it all the time. After that go to just created Pebble project and buil&install.
 
@@ -37,7 +38,14 @@ Sometimes I got this error and all I need to do is wake up phone.
 [ERROR   ] [Errno 104] Connection reset by peer
 {% endhighlight %}
 
-# What I want to see in the watchface
+# Design watchface
+
+With every watchface I used before, there was always something missing. In my watchface I want to see as much time related information as possible.
+
+The biggest priority is time and date with the day of the week. Another useful information is week of the year, which can be handy in work/business environment, and possibly the day of the year.
+
+Last but not least, is the connection status and battery status. With battery status I want to know percentage even though it takes a bit more space. And with connection status, I'd like to see the last time when the connection status was changed. That could be handy in situation when you forget your phone somewhere and you want to see when was the last time you were connected.
+
 
 
 
