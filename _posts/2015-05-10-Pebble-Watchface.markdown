@@ -46,6 +46,46 @@ The biggest priority is time and date with the day of the week. Another useful i
 
 Last but not least, is the connection status and battery status. With battery status I want to know percentage even though it takes a bit more space. And with connection status, I'd like to see the last time when the connection status was changed. That could be handy in situation when you forget your phone somewhere and you want to see when was the last time you were connected.
 
+# Code
+
+I started with sample code that was generated when creating new project. Then I deleted everything I didn't need and this is the bare minimum I was left with.
+
+I am using functions `window_load()` and `window_unload()` to create/destroy whole layout and later on to set up/destroy handlers.
+This is from documentation:
+
+- `load`: called when the window is pushed to the screen when it's not loaded. This is a good moment to do the layout of the window.
+- `unload`: called when the window is deinited, but could be used in the future to free resources bound to windows that are not on screen.
+
+
+{% highlight c %}
+#include <pebble.h>
+
+static Window *window;
+
+static void window_load(Window *window) {}
+
+static void window_unload(Window *window) {}
+
+static void init(void) {
+  window = window_create();
+  window_set_window_handlers(window, (WindowHandlers) {
+    .load = window_load,
+    .unload = window_unload,
+  });
+  const bool animated = true;
+  window_stack_push(window, animated);
+}
+
+static void deinit(void) {
+  window_destroy(window);
+}
+
+int main(void) {
+  init();
+  app_event_loop();
+  deinit();
+}
+{% endhighlight %}
 
 
 
