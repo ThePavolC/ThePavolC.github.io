@@ -50,13 +50,6 @@ Last but not least, is the connection status and battery status. With battery st
 
 I started with sample code that was generated when creating new project. Then I deleted everything I didn't need and this is the bare minimum I was left with.
 
-I am using functions `window_load()` and `window_unload()` to create/destroy whole layout and later on to set up/destroy handlers.
-This is from documentation:
-
-- `load`: called when the window is pushed to the screen when it's not loaded. This is a good moment to do the layout of the window.
-- `unload`: called when the window is deinited, but could be used in the future to free resources bound to windows that are not on screen.
-
-
 {% highlight c %}
 #include <pebble.h>
 
@@ -87,9 +80,43 @@ int main(void) {
 }
 {% endhighlight %}
 
+We will use functions `window_load()` and `window_unload()` to create/destroy whole layout and later on to set up/destroy handlers.
+This is the description about functions from [documentation][window-func]:
+
+- `load`: called when the window is pushed to the screen when it's not loaded. This is a good moment to do the layout of the window.
+- `unload`: called when the window is deinited, but could be used in the future to free resources bound to windows that are not on screen.
+
+Text on screen is inside `TextLayer`, which is added then to root layer. So first I define `s_time_layer` variable in top of the file, then in `window_load()` we create and assign text layer to it. When creating text layer, you specify location and size. In this case I want this text layer to be at very top and to take the whole width of watch. To get width of screen I need to get bonds of `windows_layer` or root layer.
+
+Then I use `text_layer_set_font()` to specify size and type of font I want to use. For now I stick with the [Pebble system fonts.][sys-fonts]
+I also changed text alignment with `text_layer_set_text_alignment()`.
+
+After I set text using `text_layer_set_text()`, all I need to do is to add new text layer to window's root layer, for that I use `layer_add_child()`.
+
+{% highlight c %}
+#include <pebble.h>
+
+static Window *window;
+static TextLayer *s_time_layer;
+
+static void window_load(Window *window) {
+    Layer *window_layer = window_get_root_layer(window);
+    GRect bounds = layer_get_bounds(window_layer);
+    s_time_layer = text_layer_create(GRect(0, 0, bounds.size.w, 42));
+
+    text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
+    text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
+    text_layer_set_text(s_time_layer, "12:34");
+
+    layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_time_layer));
+}
+
+{% endhighlight %}
 
 
 [download-sdk]: http://developer.getpebble.com/sdk
 [install]: http://developer.getpebble.com/sdk/install/linux/
 [dev-connection]: http://developer.getpebble.com/guides/publishing-tools/developer-connection/
 [emulator]: http://developer.getpebble.com/sdk/install/linux/#install-pebble-emulator-dependencies
+[window-func]: http://developer.getpebble.com/docs/c/User_Interface/Window/#WindowHandlers
+[sys-fonts]: http://developer.getpebble.com/guides/pebble-apps/display-and-animations/ux-fonts/#pebble-system-fonts
