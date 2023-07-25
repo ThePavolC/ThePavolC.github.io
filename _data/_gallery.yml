@@ -1,0 +1,237 @@
+imagesfolder: /assets/travel_page/images/fulls
+thumbsfolder: /assets/travel_page/images/thumbs
+galleryConfig:
+  [
+    '{"thumbnailWidth":"auto","thumbnailBorderVertical":10,"thumbnailBorderHorizontal":10,"colorScheme":{"thumbnail":{"borderColor":"rgba(255,255,255,1)"}},"thumbnailDisplayTransitionDuration":250,"thumbnailLabel":{"titleFontSize":"0.5em","position":"overImageOnBottom","align":"left"},"thumbnailHoverEffect2":"labelAppear75","galleryMaxRows":5,"thumbnailAlignment":"center","displayBreadcrumb":false,"breadcrumbAutoHideTopLevel":false,"breadcrumbOnlyCurrentLevel":false,"galleryFilterTags":true,"thumbnailOpenImage":true}',
+  ]
+gallerySingaporeMalaysia:
+  images:
+    - name: 08.jpg
+      thumb: 08.jpg
+      text: Kuala Lumpur, Malaysia
+    - name: 09.jpg
+      thumb: 09.jpg
+      text: Penang, Malaysia
+    - name: 22.jpg
+      thumb: 22.jpg
+      text: Penang, Malaysia
+    - name: 25.jpg
+      thumb: 25.jpg
+      text: Singapore
+    - name: 26.jpg
+      thumb: 26.jpg
+      text: Singapore
+    - name: 27.jpg
+      thumb: 27.jpg
+      text: Penang, Malaysia
+    - name: 28.jpg
+      thumb: 28.jpg
+      text: Penang, Malaysia
+    - name: 29.jpg
+      thumb: 29.jpg
+      text: Penang, Malaysia
+    - name: 37.jpg
+      thumb: 37.jpg
+      text: Penang, Malaysia
+    - name: 38.jpg
+      thumb: 38.jpg
+      text: Singapore
+    - name: 39.jpg
+      thumb: 39.jpg
+      text: Penang, Malaysia
+    - name: 41.jpg
+      thumb: 41.jpg
+      text: Penang, Malaysia
+    - name: 42.jpg
+      thumb: 42.jpg
+      text: Penang, Malaysia
+    - name: 47.jpg
+      thumb: 47.jpg
+      text: Penang, Malaysia
+    - name: 48.jpg
+      thumb: 48.jpg
+      text: Penang, Malaysia
+    - name: 50.jpg
+      thumb: 50.jpg
+      text: Penang, Malaysia
+    - name: 55.jpg
+      thumb: 55.jpg
+      text: Penang, Malaysia
+    - name: 58.jpg
+      thumb: 58.jpg
+      text: Penang, Malaysia
+    - name: 67.jpg
+      thumb: 67.jpg
+      text: Penang, Malaysia
+    - name: 70.jpg
+      thumb: 70.jpg
+      text: Penang, Malaysia
+
+galleryThailandCambodia:
+  images:
+    - name: 11.jpg
+      thumb: 11.jpg
+      text: Phnom Penh, Cambodia
+    - name: 16.jpg
+      thumb: 16.jpg
+      text: Bangkok, Thailand
+    - name: 17.jpg
+      thumb: 17.jpg
+      text: Bangkok, Thailand
+    - name: 30.jpg
+      thumb: 30.jpg
+      text: Chiang Mai, Thailand
+    - name: 31.jpg
+      thumb: 31.jpg
+      text: Chiang Rai, Thailand
+    - name: 32.jpg
+      thumb: 32.jpg
+      text: Chiang Rai, Thailand
+    - name: 40.jpg
+      thumb: 40.jpg
+      text: Bangkok, Thailand
+    - name: 43.jpg
+      thumb: 43.jpg
+      text: Phnom Penh, Cambodia
+    - name: 44.jpg
+      thumb: 44.jpg
+      text: Chiang Rai, Thailand
+    - name: 51.jpg
+      thumb: 51.jpg
+      text: Bangkok, Thailand
+    - name: 52.jpg
+      thumb: 52.jpg
+      text: Siem Reap, Cambodia
+    - name: 61.jpg
+      thumb: 61.jpg
+      text: Battambang, Cambodia
+    - name: 64.jpg
+      thumb: 64.jpg
+      text: Koh Lipe, Thailand
+    - name: 68.jpg
+      thumb: 68.jpg
+      text: Siem Reap, Cambodia
+    - name: 73.jpg
+      thumb: 73.jpg
+      text: Chiang Rai, Thailand
+
+galleryVietnamTaiwan:
+  images:
+    - name: 01.jpg
+      thumb: 01.jpg
+      text: Hoi An, Vietnam
+    - name: 07.jpg
+      thumb: 07.jpg
+      text: Taipei, Taiwan
+    - name: 10.jpg
+      thumb: 10.jpg
+      text: Hoi An, Vietnam
+    - name: 15.jpg
+      thumb: 15.jpg
+      text: Ninh Binh, Vietnam
+    - name: 20.jpg
+      thumb: 20.jpg
+      text: Taipei, Taiwan
+    - name: 21.jpg
+      thumb: 21.jpg
+      text: Ha Giang, Vietnam
+    - name: 23.jpg
+      thumb: 23.jpg
+      text: Hoi An, Vietnam
+    - name: 24.jpg
+      thumb: 24.jpg
+      text: Hualin, Taiwan
+    - name: 35.jpg
+      thumb: 35.jpg
+      text: Taiwan
+    - name: 36.jpg
+      thumb: 36.jpg
+      text: Ninh Binh, Vietnam
+    - name: 46.jpg
+      thumb: 46.jpg
+      text: Ha Long Bay, Vietnam
+    - name: 49.jpg
+      thumb: 49.jpg
+      text: Taiwan
+    - name: 54.jpg
+      thumb: 54.jpg
+      text: Sapa, Vietnam
+    - name: 56.jpg
+      thumb: 56.jpg
+      text: Ha Giang, Vietnam
+    - name: 62.jpg
+      thumb: 62.jpg
+      text: Taipei, Taiwan
+    - name: 63.jpg
+      thumb: 63.jpg
+      text: Ha Giang, Vietnam
+    - name: 65.jpg
+      thumb: 65.jpg
+      text: Ha Giang, Vietnam
+    - name: 69.jpg
+      thumb: 69.jpg
+      text: Taipei, Taiwan
+    - name: 71.jpg
+      thumb: 71.jpg
+      text: Ha Giang, Vietnam
+
+galleryJapanSouthKorea:
+  images:
+    - name: 02.jpg
+      thumb: 02.jpg
+      text: Nara, Japan
+    - name: 03.jpg
+      thumb: 03.jpg
+      text: Naoshima, Japan
+    - name: 04.jpg
+      thumb: 04.jpg
+      text: Naoshima, Japan
+    - name: 05.jpg
+      thumb: 05.jpg
+      text: Kurashiki, Japan
+    - name: 06.jpg
+      thumb: 06.jpg
+      text: Naoshima, Japan
+    - name: 12.jpg
+      thumb: 12.jpg
+      text: Osaka, Japan
+    - name: 13.jpg
+      thumb: 13.jpg
+      text: Kurashiki, Japan
+    - name: 14.jpg
+      thumb: 14.jpg
+      text: Naoshima, Japan
+    - name: 18.jpg
+      thumb: 18.jpg
+      text: Osaka, Japan
+    - name: 19.jpg
+      thumb: 19.jpg
+      text: Busan, South Korea
+    - name: 33.jpg
+      thumb: 33.jpg
+      text: Kyoto, Japan
+    - name: 34.jpg
+      thumb: 34.jpg
+      text: Kyoto, Japan
+    - name: 45.jpg
+      thumb: 45.jpg
+      text: Seoul, South Korea
+    - name: 53.jpg
+      thumb: 53.jpg
+      text: Seoul, South Korea
+    - name: 57.jpg
+      thumb: 57.jpg
+      text: Kyoto, Japan
+    - name: 59.jpg
+      thumb: 59.jpg
+      text: Nara, Japan
+    - name: 60.jpg
+      thumb: 60.jpg
+      text: Nara, Japan
+    - name: 66.jpg
+      thumb: 66.jpg
+      text: Tokyo, Japan
+    - name: 72.jpg
+      thumb: 72.jpg
+      text: Tokyo, Japan
+    
