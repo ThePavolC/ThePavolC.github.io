@@ -106,7 +106,7 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: calc($spacing-unit / 2);
+    margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list {
@@ -120,21 +120,21 @@
 
     > li {
         float: left;
-        margin-right: calc($spacing-unit / 2);
+        margin-right: $spacing-unit / 2;
     }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: calc(-1 * $spacing-unit / 2);
+    margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: calc($spacing-unit / 2);
-    padding-left: calc($spacing-unit / 2);
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
@@ -190,15 +190,15 @@
 .post-list {
     background: #d5d5d5;
 
-    padding: calc($spacing-unit / 2);
-    border-radius: calc($spacing-unit / 4);
+    padding: $spacing-unit / 2;
+    border-radius: $spacing-unit / 4;
 
     margin-left: 0;
     list-style: none;
 
     > li {
 
-        padding: calc($spacing-unit / 2);
+        padding: $spacing-unit / 2;
         box-shadow:0 5px 5px #aaa;
         background:white;
         border-radius:3px;
@@ -232,7 +232,7 @@
  */
 
  .post {
-    padding: calc($spacing-unit / 2);
+    padding: $spacing-unit / 2;
     background:white;
     border-radius:3px;
  }
