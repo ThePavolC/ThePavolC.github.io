@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@use "constants" as c;
+
 /**
  * Site header
  */
@@ -26,9 +28,10 @@
     margin-bottom: 0;
     float: left;
 
+
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: c.$grey-color-light;
     }
 }
 
@@ -43,7 +46,7 @@
     .page-link {
         //color: $text-color;
         color: lightGray;
-        line-height: $base-line-height;
+        line-height: c.$base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -51,12 +54,12 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include c.media-query(c.$on-palm) {
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: c.$background-color;
+        border: 1px solid c.$grey-color-light;
         border-radius: 5px;
         text-align: right;
 
@@ -74,7 +77,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: c.$grey-color-dark;
                 }
             }
         }
@@ -102,13 +105,13 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    border-top: 1px solid c.$grey-color-light;
+    padding: c.$spacing-unit 0;
 }
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: math.div(c.$spacing-unit, 2);
 }
 
 .contact-list {
@@ -122,56 +125,61 @@
 
     > li {
         float: left;
-        margin-right: math.div($spacing-unit, 2);
+        margin-right: math.div(c.$spacing-unit, 2);
     }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
-    margin-left: - math.div($spacing-unit, 2);
-    @extend %clearfix;
+    color: c.$grey-color;
+    margin-left: - math.div(c.$spacing-unit, 2);
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .footer-col {
     float: left;
-    margin-bottom: math.div($spacing-unit, 2);
-    padding-left: math.div($spacing-unit, 2);
+    margin-bottom: math.div(c.$spacing-unit, 2);
+    padding-left: math.div(c.$spacing-unit, 2);
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{c.$spacing-unit} / 2));
+    width:         calc(35% - (#{c.$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
-    width:         calc(30% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{c.$spacing-unit} / 2));
+    width:         calc(30% - (#{c.$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{c.$spacing-unit} / 2));
+    width:         calc(35% - (#{c.$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include c.media-query(c.$on-laptop) {
     .footer-col-1,
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(50% - (#{c.$spacing-unit} / 2));
+        width:         calc(50% - (#{c.$spacing-unit} / 2));
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - (#{c.$spacing-unit} / 2));
+        width:         calc(100% - (#{c.$spacing-unit} / 2));
     }
 }
 
-@include media-query($on-palm) {
+@include c.media-query(c.$on-palm) {
     .footer-col {
         float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: -webkit-calc(100% - (#{c.$spacing-unit} / 2));
+        width:         calc(100% - (#{c.$spacing-unit} / 2));
     }
 }
 
@@ -181,7 +189,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: c.$spacing-unit 0;
     background: #222;
 }
 
@@ -192,26 +200,26 @@
 .post-list {
     background: #d5d5d5;
 
-    padding: math.div($spacing-unit, 2);
-    border-radius: math.div($spacing-unit, 4);
+    padding: math.div(c.$spacing-unit, 2);
+    border-radius: math.div(c.$spacing-unit, 4);
 
     margin-left: 0;
     list-style: none;
 
     > li {
 
-        padding: math.div($spacing-unit, 2);
+        padding: math.div(c.$spacing-unit, 2);
         box-shadow:0 5px 5px #aaa;
         background:white;
         border-radius:3px;
 
-        margin-bottom: $spacing-unit;
+        margin-bottom: c.$spacing-unit;
     }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+    font-size: c.$small-font-size;
+    color: c.$grey-color;
 }
 
 .post-link {
@@ -225,7 +233,7 @@
 
 .post-description {
     color:gray;
-    font-size: $small-font-size;
+    font-size: c.$small-font-size;
 }
 
 
@@ -234,13 +242,13 @@
  */
 
  .post {
-    padding: math.div($spacing-unit, 2);
+    padding: math.div(c.$spacing-unit, 2);
     background:white;
     border-radius:3px;
  }
 
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: c.$spacing-unit;
 }
 
 .post-title {
@@ -249,18 +257,18 @@
     line-height: 1;
     border-bottom: 2px solid #111;
 
-    @include media-query($on-laptop) {
+    @include c.media-query(c.$on-laptop) {
         font-size: 36px;
     }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin-bottom: c.$spacing-unit;
 
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include c.media-query(c.$on-laptop) {
             font-size: 28px;
         }
     }
@@ -268,7 +276,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include c.media-query(c.$on-laptop) {
             font-size: 22px;
         }
     }
@@ -276,7 +284,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include c.media-query(c.$on-laptop) {
             font-size: 18px;
         }
     }
@@ -289,6 +297,4 @@
     }
 }
 
-.post-comments {
-
-}
+.post-comments {}
