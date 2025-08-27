@@ -32,6 +32,7 @@ The send phase can last 2-3 weeks but it's also quite personal.
 
 ## Overview
 
+```
 | Week    | Phase                   |
 | ------- | ----------------------- |
 | Week 1  | Strength                |
@@ -53,9 +54,11 @@ The send phase can last 2-3 weeks but it's also quite personal.
 | Week 17 | Optional Fitness / Send |
 | Week 18 | Optional Fitness / Send |
 | Week 19 | Optional Fitness / Send |
+```
 
 ## Weekly
 
+```
 | Day | Workout              |
 | --- | -------------------- |
 | Mon | Core and Cardio      |
@@ -65,6 +68,8 @@ The send phase can last 2-3 weeks but it's also quite personal.
 | Fri | Rest                 |
 | Sat | Outdoor/Gym          |
 | Sun | Fitness and Strength |
+```
+
 ## Workout
 ### Session 1
 - Warm up - 20 min
